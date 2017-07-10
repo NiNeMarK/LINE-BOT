@@ -1,6 +1,6 @@
 <?php
 //test
-$strAccessToken = "gRrNhYQ1R5oTopHwq5CFBFnpli2cz7VJqDtEGfEy+bQBwkQQekx62OnUGXISeASSWrh8VoD0VUqWreuQLA+LuA9smzcjH+l+CDv9rpPFzplRJ7733sWba/U0QWaaj4xY2IJANOlsuf4N+NHi0ocYkwdB04t89/1O/w1cDnyilFU=";
+$strAccessToken = "";
 
 $content = file_get_contents('php://input');
 $arrJson = json_decode($content, true);
@@ -14,7 +14,7 @@ $_msg = $arrJson['events'][0]['message']['text'];
 $_userId = $arrJson['events'][0]['source']['userId'];
 
 
-$api_key="Ev4hruRG0Ibo1k5KlKI11mRGY-nbEWRl";
+$api_key="";
 $url = 'https://api.mlab.com/api/1/databases/ninemark_bot/collections/linebot?apiKey='.$api_key.'';
 $json = file_get_contents('https://api.mlab.com/api/1/databases/ninemark_bot/collections/linebot?apiKey='.$api_key.'&q={"question":"'.$_msg.'"}');
 $data = json_decode($json);
