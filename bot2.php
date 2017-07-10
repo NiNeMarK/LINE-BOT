@@ -14,7 +14,7 @@ $_msg = $arrJson['events'][0]['message']['text'];
 $_userId = $arrJson['events'][0]['source']['userId'];
 
 
-$api_key="B_rALDsNU5zMy_IO2A8lkVtcDKNrQ4ua";
+$api_key="Ev4hruRG0Ibo1k5KlKI11mRGY-nbEWRl";
 $url = 'https://api.mlab.com/api/1/databases/ninemark_bot/collections/linebot?apiKey='.$api_key.'';
 $json = file_get_contents('https://api.mlab.com/api/1/databases/ninemark_bot/collections/linebot?apiKey='.$api_key.'&q={"question":"'.$_msg.'"}');
 $data = json_decode($json);
